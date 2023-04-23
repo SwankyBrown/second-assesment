@@ -162,10 +162,12 @@ foodArr = [
 
 //CODE HERE
 
- const filteredFood = foodArr.filter((tags) => (
- return 
- ))
-
+function filterByTag(tag) {
+    return foodArr.filter(food => food.tags.includes(tag));
+  }
+  
+  let kidsFood = filterByTag('kids')
+  console.log(object);
 
 
 //////////////////PROBLEM 5////////////////////

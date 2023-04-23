@@ -86,9 +86,9 @@ console.log(canWeDeliver(85205));
 
 const canWeDeliverTwo = (zipcode)=>{
 if (deliveryAreaZipCodes.includes(zipcode)){
-    return ("you are wirhin reach")
+    return ("you are within reach")
 } else {
-    return ("you are too far  away")
+    return ("you are too far away")
 }
 }
 console.log(canWeDeliverTwo(85205));

@@ -20,16 +20,19 @@
 */
 
 //CODE HERE
-// class Employee {
-//     constructor(name,shift) {
-//         this.name = name
-//         this.shift = shift
-//     }
-     
-class Employee {
 
-    console.log('[NAME] works on [SHIFTS]');
+class Employee {
+    constructor(name, shift){
+    this.name = name
+    this.shift = shift
+    return console.log(`${name} works on ${shift}`)
+    }
+  
 }
+
+const employee1 = new Employee ('sheldon,','9 A.M - 3 P.M')
+
+
 
 /*
     Create a new instance of your class.
@@ -43,13 +46,22 @@ class Employee {
 
 //CODE HERE
 
+// let empTwo = {
+//     Name: "Jayce",
+//     shift:"Weekday Mornings","Weekday Afternoons"
+// }
+
+
+const empTwo = new Employee ('jayce,',"Weekday Mornings","Weekday Afternoons")
+
+console.log(empTwo);
 /*
     Call the `getSchedule` method on the
     `empOne` object.
 */
 
 //CODE HERE
-
+console.log(object);
 
 /*
     Make a copy of the empOne object
