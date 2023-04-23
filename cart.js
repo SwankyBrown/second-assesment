@@ -62,13 +62,14 @@ console.log(sumPriceFood);
 
 //CODE HERE
 
-function calcFinalPrice(cartTotal,couponValue,tax){
-   const newCartTotal = cartTotal * tax 
-    return newCartTotal
-    
+function calcFinalPrice(cartTotal,tax,couponValue){
+    const taxAmount = cartTotal * tax;
+    const totalWithTax = cartTotal + taxAmount;
+    const finalPrice = totalWithTax - couponValue;
+    return finalPrice;
 }
-console.log(newCartTotal);
-console.log(calcFinalPrice(26.97,0,.06));
+
+console.log(calcFinalPrice(26.97,.06,0));
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -91,7 +92,7 @@ console.log(calcFinalPrice(26.97,0,.06));
 */
 
 /*
-    TEXT ANSWER HERE
+    My customers height and size will be put into account to be able to seat them comfortabley this data type will be called height so i know what tables can sit a person over 6 foot as well as people shorter. next my customers will be asked their age to see of they qualify for the Daily Age Eat Free! i will call this data type age so i can log if they are elidgable for the free meal. i also want my customers to choose spicy or not-spicy. ill use this data type to see if their apitizers are gonna be (true) spicy or (false)not spicy. las thing is if its their birthday. i will use this data type to see if they qualify for a free peice of cake
 
 */
 
@@ -101,3 +102,10 @@ console.log(calcFinalPrice(26.97,0,.06));
 */
 
 //CODE HERE
+
+const customer = {
+    age: 50,
+    height: "5'7",
+    spicy: true,
+    birthday: false,
+  };

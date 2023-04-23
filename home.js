@@ -84,16 +84,14 @@ console.log(canWeDeliver(85205));
 
 // CODE HERE
 
-
-function canWeDeliverTwo(zipcode) {
-    if (deliveryAreaZipCodes.includes(zipcode)) {
-        return 'Eligible for delivery!'
-    } else {
-        return "you are not within the maximum distance"
-    }
+const canWeDeliverTwo = (zipcode)=>{
+if (deliveryAreaZipCodes.includes(zipcode)){
+    return ("you are wirhin reach")
+} else {
+    return ("you are too far  away")
+}
 }
 console.log(canWeDeliverTwo(85205));
-
 
 
 //////////////////PROBLEM 3////////////////////
@@ -131,7 +129,7 @@ const deals = [
 
 
 //CODE HERE
-deals[0].title = deals[0].title.replace('15', '10');
+deals[0].title = deals[0].title.replace('15','10')
 console.log(deals[0].title);
 
 /*
@@ -150,6 +148,6 @@ console.log(deals[0].title);
 //CODE HERE
 
 deals[1].desc = deals[1].desc.replace('March',"April");
+console.log(deals[1].desc.trim())
 
-console.log(deals[1].desc)
 

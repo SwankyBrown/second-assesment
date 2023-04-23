@@ -36,9 +36,9 @@ const pizza = {
     name: 'Chicken Bacon Ranch',
     price: 13.99,
     category: "Gluten-Free",
-    popularity: 9/10,
-    rating: 4/5,
-    tags: ["chicken-pizza"]
+    popularity: "9/10",
+    rating: '4/5',
+    tags: ["chicken-pizza","Diet-Friendly","kids","adults"]
 }
 
 
@@ -51,7 +51,8 @@ const pizza = {
 */
 
 //CODE HERE
-
+let popularityPizza  = pizza.popularity
+console.log(popularityPizza);
 
 /*
     Second, log the second tag in your pizza's
@@ -61,8 +62,8 @@ const pizza = {
 */
 
 //CODE HERE
-
-
+let diet = pizza['tags'][1]
+console.log(diet);
 /*
     Third, destructure the price off of the
     pizza object.
@@ -72,6 +73,9 @@ const pizza = {
 
 //CODE HERE
 
+const {name, price} = pizza
+console.log(name);
+console.log(price);
 
 /*
     Fourth, and last, destructure the category
@@ -82,6 +86,9 @@ const pizza = {
 
 //CODE HERE
 
+const {category} = pizza
+
+console.log(category);
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -97,6 +104,48 @@ const pizza = {
 
 //CODE HERE
 
+foodArr = [
+    {
+    name: 'Chicken Bacon Ranch',
+    price: 13.99,
+    category: "Gluten-Free",
+    popularity: "9/10",
+    rating: '4/5',
+    tags: ["chicken-pizza","Diet-Friendly","kids","adults"]
+    },
+    {
+    name: 'Canadian Bacon',
+    price: 11.99,
+    category: "pizza of the day",
+    popularity: "7/10",
+    rating: '3.7/5',
+    tags: ["bacon-pizza","Diet-Friendly","kids","adults"]
+    },
+    {
+    name: 'Pepperoni',
+    price: 8.99,
+    category: "Standard",
+    popularity: "9/10",
+    rating: '4/5',
+    tags: ["Pork","Meal-deal","kids","adults"]
+    },
+    {
+    name: 'Philly',
+    price: 15.99,
+    category: "Special",
+    popularity: "10/10",
+    rating: '4.3/5',
+    tags: ["Steak","Protein-Blasted","family","adults"]
+    },
+    {
+    name: 'cheese',
+    price: 7.99,
+    category: "Gluten-Free",
+    popularity: "8/10",
+    rating: '3/5',
+    tags: ["Cheese","Diet-Friendly","kids","adults"]
+    },
+]
 
 
 //////////////////PROBLEM 4////////////////////
@@ -113,7 +162,9 @@ const pizza = {
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+ const filteredFood = foodArr.filter((tags) => (
+ return 
+ ))
 
 
 
