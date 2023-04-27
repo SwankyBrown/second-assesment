@@ -109,3 +109,13 @@ const customer = {
     spicy: true,
     birthday: false,
   };
+
+
+
+  ////practice
+
+  function addition (a,b){
+const abPlus = a + b
+return abPlus
+  }
+  console.log(addition(4,2));

@@ -167,7 +167,7 @@ function filterByTag(tag) {
   }
   
   let kidsFood = filterByTag('kids')
-  console.log(object);
+  console.log(kidsFood);
 
 
 //////////////////PROBLEM 5////////////////////
