@@ -26,7 +26,7 @@ const greetUser = (username) => {
     return (`welcome back ${username}`)
 }
 
-console.log(greetUser("andrew"));
+console.log(greetUser("michael"));
 
 
 
